@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  color: #d0d0f4;
+  color: #dcdcf9;
+}
+a {
+  text-decoration: none;
 }
 body {
-  background-color: #20253e;
+  background-color: #10152f;
   width: 95%;
   margin: auto;
 }
@@ -20,6 +23,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  background-color: #10152f;
 }
 #nav-menu div {
   display: flex;
@@ -35,14 +39,121 @@ body {
   color: #7d7ded;
 }
 #nav-menu div a::after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: 3px solid #7d7ded;
   width: 0;
-  height: 1px;
-  background: #000;
   transition: all 0.5s ease-in-out;
 }
 #nav-menu div a:hover::after {
   width: 100%;
+}
+
+/* ABOUT */
+.nav-link {
+  margin: 100px auto;
+  letter-spacing: 2px;
+}
+.nav-link h1 {
+  text-align: center;
+  color: #7d7ded;
+  letter-spacing: 10px;
+  margin: 60px auto;
+  font-size: 30px;
+}
+.home h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+#user-detail-name {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #dcdcf9;
+}
+#user-detail-intro {
+  letter-spacing: 1px;
+  line-height: 24px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.about>div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home-img {
+  width: 20%;
+  /* height: 500px; */
+  overflow: hidden;
+  border-radius: 300px;
+  margin-right: 50px;
+}
+.about>div>div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.about>div>div>p {
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+.about>div>div>div {
+  margin: 16px 0;
+}
+.about>div>div i {
+  margin-right: 20px;
+  font-size: 40px;
+}
+.about>div>div i:hover {
+  color: #7d7ded;
+}
+#resume-button-2 {
+  margin-top: 16px;
+  padding: 8px 16px;
+  color: #10152f;
+  font-size: 24px;
+  font-weight: 600;
+  border: 2px solid black;
+  letter-spacing: 1px;
+}
+#resume-button-2:hover {
+  background-color: #7d7ded;
+  color: white;
+  border: 2px solid white;
+}
+
+/* SKILLS */
+.skills>div {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.skills>div .skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.skills .skills-card-img {
+  width: 30%;
+}
+.skills .skills-card-img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+.skills .skills-card-name {
+  font-size: 20px;
+  margin: 12px auto;
 }
