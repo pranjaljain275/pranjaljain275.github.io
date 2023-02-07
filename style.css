@@ -37,7 +37,7 @@ body {
 #nav-menu div a::after {
   content: '';
   display: block;
-  border-bottom: 4px solid #7d7ded;
+  border-bottom: 3px solid #7d7ded;
   width: 0;
   height: 1px;
   background: #000;
