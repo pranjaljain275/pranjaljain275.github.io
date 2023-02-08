@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-      crossorigin="anonymous" referrerpolicy="no-referrer" 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Pranjal Jain Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -20,87 +26,144 @@
       <!-- <div><img src="" alt="" /></div> -->
       <div><h1>Pranjal Jain</h1></div>
       <div>
-        <div id="home"><a href=".nav-link.home">Home</a></div>
-        <div id="about" class="about section"><a href=".nav-link.about">About</a></div>
-        <div id="skills"><a href=".nav-link.skills">Skills</a></div>
-        <div id="projects"><a href=".nav-link.projects">Projects</a></div>
-        <div id="contact"><a href=".nav-link.contact">Contact</a></div>
-        <div id="resume"><a>Resume</a href=".nav-link.resume"></div>
+        <div><a href="#home">Home</a></div>
+        <div class="about section">
+          <a href="#about">About</a>
+        </div>
+        <div><a href="#skills">Skills</a></div>
+        <div><a href="#projects">Projects</a></div>
+        <div><a href="#contact">Contact</a></div>
+        <h5 class="nav-link resume">
+          <a
+            id="resume-link-1"
+            href="/Pranjal-Jain-Resume.pdf"
+            target="_blank"
+            download
+          >
+            <button id="resume-button-1" onclick="resumeTab1()">Resume</button>
+          </a>
+        </h5>
       </div>
     </section>
 
-    <section class="nav-link home">
+    <section class="nav-link home" id="home">
       <h1 id="user-detail-name">Hi! I am Pranjal Jain</h1>
+      <h2>
+        I'm
+        <a
+          href=""
+          class="typewrite"
+          data-period="2000"
+          data-type='[ "Full-Stack Web Developer.", "NodeJS Developer.", "Coder.", "Problem Solver." ]'
+        >
+          <span class="wrap"></span>
+        </a>
+      </h2>
       <h2>A Full Stack Web Developer</h2>
-      <p id="user-detail-intro">A passionate developer, Dedicated to developing robust applications that interact with the Backend part of web applications. Extensive expertise in website architecture, design, and web design, and web API designs. Problem-solving mindset with a goal to optimize my application for better stability and speed. Love to work in a team.</p>
+      <p id="user-detail-intro">
+        A passionate full stack web developer, Dedicated to developing robust
+        applications that interact with the Backend part of web applications.
+        Extensive expertise in JavaScript, NodeJS, ExpressJS and MongoDB.
+        Problem-solving mindset with a goal to optimize my application for
+        better stability and speed. Love to work in a team.
+      </p>
     </section>
 
-    <section class="nav-link about">
+    <section class="nav-link about" id="about">
       <h1>ABOUT ME</h1>
       <div>
-        <img class="home-img" src="images/My PP.jpg" alt="">
+        <img class="home-img" src="images/My PP.jpg" alt="" />
         <div>
-          <p>An optimistic, sincere and hardworking individual, wants to enhance knowledge and capabilities by working in a dynamic organization that prides itself in giving substantial responsibility to new talent. Looking forward to working as an accountable and competent employee in an exciting tech company.</p>
+          <p>
+            An optimistic, sincere and hardworking individual, wants to enhance
+            knowledge and capabilities by working in a dynamic organization that
+            prides itself in giving substantial responsibility to new talent.
+            Looking forward to working as an accountable and competent employee
+            in an exciting tech company.
+          </p>
           <div>
-            <a id="contact-linkedin" href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a id="contact-github" href=""><i class="fa-brands fa-github"></i></a>
-            <a id="contact-email" href=""><i class="fa-solid fa-envelope"></i></a>
+            <a id="contact-linkedin" href=""
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a id="contact-github" href=""
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a id="contact-email" href=""
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
             <a id="contact-phone" href=""><i class="fa-solid fa-phone"></i></a>
           </div>
-          <button id="resume-button-2">Resume</button>
+          <a
+            id="resume-link-2"
+            href="/Pranjal-Jain-Resume.pdf"
+            target="_blank"
+            download
+          >
+            <button id="resume-button-2" onclick="resumeTab2()">Resume</button>
+          </a>
+          <!-- <button id="resume-button-2">Resume</button> -->
         </div>
       </div>
     </section>
 
-    <section class="nav-link resume"></section>
-
-    <section class="nav-link skills">
+    <section class="nav-link skills" id="skills">
       <h1>MY SKILLS</h1>
       <div>
         <div class="skills-card">
-          <img class="skills-card-img" src="images/html-5.svg" alt="html">
+          <img class="skills-card-img" src="images/html-5.svg" alt="html" />
           <p class="skills-card-name">HTML5</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="images/css3.svg" alt="css">
+          <img class="skills-card-img" src="images/css3.svg" alt="css" />
           <p class="skills-card-name">CSS3</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="/images/javascript.svg" alt="js">
+          <img class="skills-card-img" src="/images/javascript.svg" alt="js" />
           <p class="skills-card-name">JavaScript</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="/images/nodejs.svg" alt="node">
+          <img class="skills-card-img" src="/images/nodejs.svg" alt="node" />
           <p class="skills-card-name">Node.Js</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="/images/expressjs-icon.svg" alt="express">
+          <img
+            class="skills-card-img"
+            src="/images/expressjs-icon.svg"
+            alt="express"
+          />
           <p class="skills-card-name">Express.Js</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="/images/mongodb.svg" alt="mongo">
+          <img class="skills-card-img" src="/images/mongodb.svg" alt="mongo" />
           <p class="skills-card-name">MongoDB</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="/images/icons8-github.svg" alt="">
+          <img class="skills-card-img" src="/images/icons8-github.svg" alt="" />
           <p class="skills-card-name">GitHub</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="/images/bootstrap-original.svg" alt="">
+          <img
+            class="skills-card-img"
+            src="/images/bootstrap-original.svg"
+            alt=""
+          />
           <p class="skills-card-name">Bootstrap</p>
         </div>
         <div class="skills-card">
-          <img class="skills-card-img" src="images/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites.-24.png" alt="">
+          <img
+            class="skills-card-img"
+            src="images/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites.-24.png"
+            alt=""
+          />
           <p class="skills-card-name">Netlify</p>
         </div>
       </div>
     </section>
 
-    <section class="nav-link projects"></section>
-    <section class="nav-link contact"></section>
+    <section class="nav-link projects" id="projects"></section>
+    <section class="nav-link contact" id="contact"></section>
   </body>
 </html>
-
 
 <!-- 
 The elements within the navbar linked to the above 4 sections should have the following.
