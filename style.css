@@ -22,7 +22,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 20px;
+  padding: 20px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -94,7 +94,7 @@ section h1 {
   letter-spacing: 2px;
   color: #ace3f3;
 }
-#user-detail-intro {
+#home p {
   letter-spacing: 1px;
   line-height: 24px;
   width: 75%;
