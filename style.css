@@ -12,9 +12,17 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: #272727;
+  background-color: #1d1d1d;
   width: 95%;
   margin: auto;
+}
+section h1 {
+  text-align: center;
+  color: #45a29e;
+  letter-spacing: 10px;
+  margin: 80px auto;
+  font-size: 30px;
+  font-weight: 1000;
 }
 
 /* NAVBAR */
@@ -27,6 +35,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   background-color: #116466;
   /* background-color: #2f4454; */
 }
@@ -40,9 +49,11 @@ body {
   text-decoration: none;
   padding: 4px 0.5px;
   font-size: 20px;
+  transition: all 0.5s ease-in-out;
 }
 #nav-menu div div a:hover {
   color: #7ffef6;
+  transition: all 0.5s ease-in-out;
 }
 #nav-menu div div a::after {
   content: "";
@@ -60,17 +71,21 @@ body {
   margin: 0;  
 }
 #resume-button-1 {
-  padding: 8px 14px;
-  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 14px;
+  font-size: 18px;
   color: #272727;
   background-color: #ace3f3;
   border: none;
+  transition: all 0.5s ease-in-out;
 }
 #resume-button-1:hover {
   background-color: #272727;
   color: #eae7d7;
+  transition: all 0.5s ease-in-out;
 }
 #resume-button-2 {
+  cursor: pointer;
   margin-top: 16px;
   padding: 8px 14px;
   font-size: 20px;
@@ -79,27 +94,24 @@ body {
   border: none;
   color: #272727;
   background-color: #ace3f3;
+  transition: all 0.5s ease-in-out;
 }
 #resume-button-2:hover {
   background-color: #116466;
   color: #eae7d7;
+  transition: all 0.5s ease-in-out;
+}
+#home #resume-button-2 {
+  margin-top: 30px;
 }
 
 /*HOME / ABOUT */
 .wrap {
-  color: #116466;
-}
-.nav-link {
-  margin: 100px auto;
-  letter-spacing: 2px;
-}
-section h1 {
-  text-align: center;
   color: #45a29e;
-  letter-spacing: 10px;
-  margin: 60px auto;
-  font-size: 30px;
-  font-weight: 1000;
+}
+#home {
+  margin: 120px auto;
+  text-align: center;
 }
 #home h2 {
   text-align: center;
@@ -130,8 +142,17 @@ section h1 {
 .home-img {
   width: 20%;
   overflow: hidden;
-  border-radius: 300px;
+  border-radius: 10px;
   margin-right: 50px;
+  transform: scale(1);
+  transition: transform 0.75s ease-out;
+}
+.home-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.75s ease-out;
+}
+#about {
+  margin: 120px auto;
 }
 #about .resume {
   margin: 0;
@@ -155,9 +176,11 @@ section h1 {
 #about>div>div i {
   margin-right: 20px;
   font-size: 40px;
+  transition: all 0.5s ease-in-out;
 }
 #about>div>div i:hover {
   color: #116466;
+  transition: all 0.5s ease-in-out;
 }
 
 /* SKILLS */
@@ -176,12 +199,39 @@ section h1 {
 }
 #skills .skills-card-img {
   width: 30%;
+  transform: scale(1);
+  transition: transform 0.75s ease-out;
+
 }
 #skills .skills-card-img:hover {
   transform: scale(1.2);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.75s ease-in;
 }
 #skills .skills-card-name {
   font-size: 20px;
   margin: 12px auto;
+}
+
+/* GITHUB */
+#git-stats>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+#git-stats>div>p:nth-child(1) {
+  width: 100%;
+  text-align: left;
+}
+#git-stats>div>p:nth-child(2) {
+  width: 100%;
+  text-align: center;
+}
+#git-stats>div>p:nth-child(3) {
+  width: 100%;
+  text-align: right;
+}
+#git-stats>div>p>img {
+  width: 30%;
 }
