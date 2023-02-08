@@ -54,6 +54,8 @@ body {
 #nav-menu div a:hover::after {
   width: 100%;
 }
+
+/* RESUME */
 .resume {
   margin: 0;  
 }
@@ -68,8 +70,25 @@ body {
   background-color: #272727;
   color: #eae7d7;
 }
+#resume-button-2 {
+  margin-top: 16px;
+  padding: 8px 14px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  color: #272727;
+  background-color: #ace3f3;
+}
+#resume-button-2:hover {
+  background-color: #116466;
+  color: #eae7d7;
+}
 
-/* ABOUT */
+/*HOME / ABOUT */
+.wrap {
+  color: #116466;
+}
 .nav-link {
   margin: 100px auto;
   letter-spacing: 2px;
@@ -110,10 +129,12 @@ section h1 {
 }
 .home-img {
   width: 20%;
-  /* height: 500px; */
   overflow: hidden;
   border-radius: 300px;
   margin-right: 50px;
+}
+#about .resume {
+  margin: 0;
 }
 #about>div>div {
   width: 50%;
@@ -137,20 +158,6 @@ section h1 {
 }
 #about>div>div i:hover {
   color: #116466;
-}
-#resume-button-2 {
-  margin-top: 16px;
-  padding: 8px 14px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border: none;
-  color: #272727;
-  background-color: #ace3f3;
-}
-#resume-button-2:hover {
-  background-color: #116466;
-  color: #eae7d7;
 }
 
 /* SKILLS */
