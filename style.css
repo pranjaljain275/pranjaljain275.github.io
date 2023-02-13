@@ -40,11 +40,15 @@ section h1 {
   background-color: #116466;
   /* background-color: #2f4454; */
 }
-#nav-menu div, #nav-menu h5 {
+#nav-menu div,
+#nav-menu h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 24px;
+}
+#nav-menu > div {
+  margin: 0;
 }
 #nav-menu div a {
   text-decoration: none;
@@ -73,8 +77,9 @@ section h1 {
   height: 24px;
   justify-content: space-between;
   align-items: center;
+  /* margin-right: 36px; */
 }
-#nav-menu #hamburger span{
+#nav-menu #hamburger span {
   width: 30px;
   height: 4px;
   background-color: #eae7d7;
@@ -82,7 +87,7 @@ section h1 {
 
 /* RESUME */
 .resume {
-  margin: 0;  
+  margin: 0;
 }
 #resume-button-1 {
   cursor: pointer;
@@ -149,7 +154,7 @@ section h1 {
   font-weight: 400;
   font-size: 16px;
 }
-#about>div {
+#about > div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -169,35 +174,35 @@ section h1 {
 }
 #about {
   margin: 120px auto;
-  background: linear-gradient(0deg ,#116466 ,#4b4f4f);
+  background: linear-gradient(0deg, #116466, #4b4f4f);
   padding-bottom: 60px;
   padding-top: 5px;
 }
 #about .resume {
   margin: 0;
 }
-#about>div>div {
+#about > div > div {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-#about>div>div>p {
+#about > div > div > p {
   letter-spacing: 0.5px;
   font-size: 20px;
   margin-bottom: 16px;
   text-align: justify;
 }
-#about>div>div>div {
+#about > div > div > div {
   margin: 16px 0;
 }
-#about>div>div i {
+#about > div > div i {
   margin-right: 20px;
   font-size: 40px;
   transition: all 0.5s ease-in-out;
 }
-#about>div>div i:hover {
+#about > div > div i:hover {
   color: #0b0c10;
   transition: all 0.5s ease-in-out;
 }
@@ -207,7 +212,7 @@ section h1 {
   width: 90%;
   margin: auto;
 }
-#skills>div {
+#skills > div {
   margin: 30px auto;
   display: grid;
   justify-content: space-around;
@@ -215,7 +220,7 @@ section h1 {
   /* grid-template-rows: repeat(3, 200px); */
   gap: 70px;
 }
-#skills>div .skills-card {
+#skills > div .skills-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,14 +231,14 @@ section h1 {
   /* background-color: #272727; */
   box-shadow: #116466 0px 24px 100px 0px;
 }
-#skills>div .skills-card:hover {
-  box-shadow: #116466 0px 30px 60px -12px inset, #116466 0px 18px 36px -18px inset;
+#skills > div .skills-card:hover {
+  box-shadow: #116466 0px 30px 60px -12px inset,
+    #116466 0px 18px 36px -18px inset;
 }
 #skills .skills-card-img {
   width: 75%;
   transform: scale(1);
   transition: transform 0.75s ease-out;
-
 }
 #skills .skills-card-img:hover {
   transform: scale(1.2);
@@ -246,7 +251,7 @@ section h1 {
 
 /* PROJECT */
 
-#projects>div {
+#projects > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,7 +260,7 @@ section h1 {
   width: 75%;
   margin: auto;
 }
-#projects>div>div {
+#projects > div > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -264,10 +269,10 @@ section h1 {
 .project-card {
   height: 300px;
 }
-.project-card>div {
+.project-card > div {
   width: 50%;
 }
-.project-card>img {
+.project-card > img {
   width: 30%;
 }
 
@@ -276,48 +281,49 @@ section h1 {
   width: 95%;
   margin: auto;
 }
-#git-stats>div {
+#git-stats > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
 }
-#git-stats>div>p:nth-child(1) {
+#git-stats > div > p:nth-child(1) {
   width: 100%;
   text-align: left;
 }
-#git-stats>div>p:nth-child(2) {
+#git-stats > div > p:nth-child(2) {
   width: 100%;
   text-align: center;
 }
-#git-stats>div>p:nth-child(3) {
+#git-stats > div > p:nth-child(3) {
   width: 100%;
   text-align: right;
 }
-#git-stats>div>p>img {
+#git-stats > div > p > img {
   width: 30%;
 }
 
 /* CONTACT */
 #contact {
-  box-shadow: #116466 0px -30px 36px -12px inset, #116466 0px -18px 36px -18px inset;
+  box-shadow: #116466 0px -30px 36px -12px inset,
+    #116466 0px -18px 36px -18px inset;
   /* box-shadow: #116466 0px -50px 36px -28px inset ; */
   text-align: center;
   margin: 40px auto 0 auto;
-  background: linear-gradient(60deg ,#232424 ,#313232);
+  background: linear-gradient(60deg, #232424, #313232);
   /* background: #343838; */
   padding: 4px;
 }
 #contact h1 {
   margin: 40px;
 }
-#contact>p {
+#contact > p {
   /* color: #ace3f3; */
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 1px;
 }
-#contact>p:nth-child(3) {
+#contact > p:nth-child(3) {
   margin: 6px 0 40px 0;
 }
 #contact-info {
@@ -345,20 +351,20 @@ section h1 {
   letter-spacing: 2px;
 }
 
-
 /* Responsive */
-@media screen and (min-width:0) and (max-width:830px) {
-  #nav-menu {
-    height: 47.2px;
-  }
-  #nav-menu div{
+@media screen and (min-width: 0) and (max-width: 830px) {
+  #nav-menu div {
     display: none;
   }
   #nav-menu #hamburger {
     display: flex;
   }
 }
-@media screen and (min-width:500px) and (max-width:830px) {
+@media screen and (min-width: 500px) and (max-width: 830px) {
+  #nav-menu {
+    padding: 20px 30px;
+    height: 40px;
+  }
   section h1 {
     letter-spacing: 8px;
     margin: 50px auto;
@@ -374,6 +380,7 @@ section h1 {
   #user-detail-name {
     margin-bottom: 30px;
     font-size: 40px;
+    margin-top: 120px;
   }
   #home p {
     letter-spacing: 0.5px;
@@ -390,34 +397,75 @@ section h1 {
     padding-bottom: 60px;
     padding-top: 5px;
   }
-  #about>div>div {
+  #about > div > div {
     width: 60%;
   }
-  #about>div>div>p {
+  #about > div > div > p {
     font-size: 12px;
     margin-bottom: 10px;
   }
-  #about>div>div>div {
+  #about > div > div > div {
     margin: 10px 0;
   }
-  #about>div>div i {
+  #about > div > div i {
     margin-right: 20px;
     font-size: 30px;
-  }
-  #skills>div {
-    grid-template-columns: repeat(2, 200px);
   }
   #resume-button-2 {
     margin-top: 10px;
     font-size: 14px;
   }
+  /* SKILLS */
+  #skills > div {
+    margin: 20px auto;
+    grid-template-columns: repeat(3, 140px);
+    gap: 30px;
+  }
+  #skills > div .skills-card {
+    padding: 12px;
+  }
+  #skills .skills-card-img {
+    width: 60%;
+  }
+  #skills .skills-card-name {
+    font-size: 16px;
+    margin: 10px auto;
+  }
+  /* CONTACT */
+  #contact {
+    margin: 30px auto 0 auto;
+    padding: 4px;
+  }
+  #contact h1 {
+    margin: 30px;
+  }
+  #contact > p {
+    font-size: 12px;
+    letter-spacing: 0.75px;
+  }
+  #contact-info {
+    padding: 6px;
+    margin: 8px 0;
+  }
+  #contact-info i {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+  #contact-info p {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
 }
 
-@media screen and (min-width:0) and (max-width:500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  #nav-menu {
+    height: 30px;
+  }
   section h1 {
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     margin: 40px auto;
-    font-size: 20px;
+    font-size: 16px;
   }
   /* home/about */
   #home {
@@ -429,6 +477,7 @@ section h1 {
   #user-detail-name {
     margin-bottom: 20px;
     font-size: 22px;
+    margin-top: 90px;
   }
   #home p {
     letter-spacing: 0.5px;
@@ -439,36 +488,181 @@ section h1 {
   .home-img {
     width: 30%;
     margin-right: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   #about {
     margin: 60px auto;
     padding-bottom: 40px;
     padding-top: 5px;
   }
-  #about>div {
+  #about > div {
     flex-direction: column;
   }
-  #about>div>div {
-    width: 80%;
+  #about > div > div {
+    width: 85%;
     align-items: center;
   }
-  #about>div>div>p {
+  #about > div > div > p {
     font-size: 12px;
     margin-bottom: 10px;
   }
-  #about>div>div>div {
+  #about > div > div > div {
     margin: 10px 0;
   }
-  #about>div>div i {
+  #about > div > div i {
     margin-right: 20px;
-    font-size: 30px;
-  }
-  #skills>div {
-    grid-template-columns: repeat(1, 200px);
+    font-size: 24px;
   }
   #resume-button-2 {
     margin-top: 10px;
+    font-size: 12px;
+  }
+  #skills > div {
+    margin: 16px auto;
+    grid-template-columns: repeat(2, 120px);
+    gap: 30px;
+  }
+  #skills > div .skills-card {
+    padding: 10px;
+  }
+  #skills .skills-card-img {
+    width: 50%;
+  }
+  #skills .skills-card-name {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+  /* CONTACT */
+  #contact {
+    margin: 20px auto 0 auto;
+    padding: 4px;
+  }
+  #contact h1 {
+    margin: 20px;
+  }
+  #contact > p {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  #contact > p:nth-child(3) {
+    margin: 10px 0 16px 0;
+  }
+  #contact-info {
+    padding: 6px;
+    margin: 8px 0;
+  }
+  #contact-info i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  #contact-info p {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 300px) {
+  #nav-menu {
+    height: 20px;
+  }
+  section h1 {
+    letter-spacing: 3px;
+    margin: 10px auto;
+    font-size: 12px;
+  }
+  /* home/about */
+  #home {
+    margin: 30px auto;
+  }
+  #home h2 {
     font-size: 14px;
+  }
+  #user-detail-name {
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 90px;
+  }
+  #home p {
+    letter-spacing: 0.25px;
+    line-height: 12px;
+    width: 90%;
+    font-size: 10px;
+  }
+  .home-img {
+    width: 30%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #about {
+    margin: 20px auto;
+    padding-bottom: 20px;
+    padding-top: 2px;
+  }
+  #about > div {
+    flex-direction: column;
+  }
+  #about > div > div {
+    width: 85%;
+    align-items: center;
+  }
+  #about > div > div > p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  #about > div > div > div {
+    margin: 8px 0;
+  }
+  #about > div > div i {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  #resume-button-2 {
+    margin-top: 8px;
+    font-size: 10px;
+  }
+  #skills > div {
+    margin: 12px auto;
+    grid-template-columns: repeat(2, 100px);
+    gap: 16px;
+  }
+  #skills > div .skills-card {
+    padding: 8px;
+  }
+  #skills .skills-card-img {
+    width: 40%;
+  }
+  #skills .skills-card-name {
+    font-size: 10px;
+    margin: 8px auto;
+  }
+  /* CONTACT */
+  #contact {
+    margin: 20px auto 0 auto;
+    padding: 4px;
+  }
+  #contact h1 {
+    margin: 14px;
+  }
+  #contact > p {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+  #contact > p:nth-child(3) {
+    margin: 8px 0 10px 0;
+  }
+  #contact-info {
+    padding: 6px;
+    margin: 2px 0;
+  }
+  #contact-info i {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  #contact-info p {
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0;
   }
 }
