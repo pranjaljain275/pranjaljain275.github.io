@@ -67,14 +67,14 @@ section h1 {
 #nav-menu div a:hover::after {
   width: 100%;
 }
-#hamburger {
-  display: flex;
+#nav-menu #hamburger {
+  display: none;
   flex-direction: column;
   height: 24px;
   justify-content: space-between;
   align-items: center;
 }
-#hamburger span{
+#nav-menu #hamburger span{
   width: 30px;
   height: 4px;
   background-color: #eae7d7;
@@ -347,6 +347,128 @@ section h1 {
 
 
 /* Responsive */
-@media screen and (max-width:400px) and (min-width:400px) {
-  
+@media screen and (min-width:0) and (max-width:830px) {
+  #nav-menu {
+    height: 47.2px;
+  }
+  #nav-menu div{
+    display: none;
+  }
+  #nav-menu #hamburger {
+    display: flex;
+  }
+}
+@media screen and (min-width:500px) and (max-width:830px) {
+  section h1 {
+    letter-spacing: 8px;
+    margin: 50px auto;
+    font-size: 26px;
+  }
+  /* home/about */
+  #home {
+    margin: 80px auto;
+  }
+  #home h2 {
+    font-size: 24px;
+  }
+  #user-detail-name {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  #home p {
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    width: 85%;
+    font-size: 14px;
+  }
+  .home-img {
+    width: 20%;
+    margin-right: 10px;
+  }
+  #about {
+    margin: 80px auto;
+    padding-bottom: 60px;
+    padding-top: 5px;
+  }
+  #about>div>div {
+    width: 60%;
+  }
+  #about>div>div>p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  #about>div>div>div {
+    margin: 10px 0;
+  }
+  #about>div>div i {
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  #skills>div {
+    grid-template-columns: repeat(2, 200px);
+  }
+  #resume-button-2 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:0) and (max-width:500px) {
+  section h1 {
+    letter-spacing: 8px;
+    margin: 40px auto;
+    font-size: 20px;
+  }
+  /* home/about */
+  #home {
+    margin: 60px auto;
+  }
+  #home h2 {
+    font-size: 16px;
+  }
+  #user-detail-name {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  #home p {
+    letter-spacing: 0.5px;
+    line-height: 14px;
+    width: 90%;
+    font-size: 12px;
+  }
+  .home-img {
+    width: 30%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #about {
+    margin: 60px auto;
+    padding-bottom: 40px;
+    padding-top: 5px;
+  }
+  #about>div {
+    flex-direction: column;
+  }
+  #about>div>div {
+    width: 80%;
+    align-items: center;
+  }
+  #about>div>div>p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  #about>div>div>div {
+    margin: 10px 0;
+  }
+  #about>div>div i {
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  #skills>div {
+    grid-template-columns: repeat(1, 200px);
+  }
+  #resume-button-2 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }
