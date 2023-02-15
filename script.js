@@ -11,6 +11,10 @@ function resumeTab2() {
   );
 }
 
+GitHubCalendar(".react-activity-calendar", "pranjaljain275");
+// or enable responsive functionality:
+GitHubCalendar(".react-activity-calendar", "pranjaljain275", { responsive: true });
+
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
