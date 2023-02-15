@@ -1,3 +1,4 @@
+// RESUME BUTTON
 function resumeTab1() {
   window.open(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
@@ -11,10 +12,20 @@ function resumeTab2() {
   );
 }
 
+// GITHUB-CALENDAR
 GitHubCalendar(".react-activity-calendar", "pranjaljain275");
 // or enable responsive functionality:
-GitHubCalendar(".react-activity-calendar", "pranjaljain275", { responsive: true });
+GitHubCalendar(".react-activity-calendar", "pranjaljain275", {
+  responsive: true,
+});
 
+// HAMBURGER NAV
+// document.querySelector("#hamburger").addEventListener("click", () => {
+//   document.querySelector("#nav-menu div").style.display = "flex";
+//   document.querySelector("#nav-menu div").style.flexDirection = "column";
+// });
+
+// NAME_ANIMATION
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
