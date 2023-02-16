@@ -20,10 +20,14 @@ GitHubCalendar(".react-activity-calendar", "pranjaljain275", {
 });
 
 // HAMBURGER NAV
-// document.querySelector("#hamburger").addEventListener("click", () => {
-//   document.querySelector("#nav-menu div").style.display = "flex";
-//   document.querySelector("#nav-menu div").style.flexDirection = "column";
-// });
+document.querySelector("#hamburger").addEventListener("click", () => {
+  let x = document.querySelector("#nav-menu>div:nth-child(2)");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+});
 
 // NAME_ANIMATION
 var TxtType = function (el, toRotate, period) {

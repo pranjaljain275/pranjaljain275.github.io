@@ -42,8 +42,8 @@ section h1 {
 
   /* background-color: #2f4454; */
 }
-#nav-menu>div:first-child img{
-  width: 10%;
+#nav-menu > img {
+  width: 40px;
 }
 #nav-menu div,
 #nav-menu h5 {
@@ -419,18 +419,39 @@ section h1 {
 }
 
 /* Responsive */
-@media screen and (min-width: 0) and (max-width: 830px) {
-  #nav-menu>div {
-    display: none;
-  }
-  #nav-menu #hamburger {
-    display: flex;
-  }
-}
 @media screen and (min-width: 500px) and (max-width: 830px) {
   #nav-menu {
     padding: 20px 30px;
     height: 40px;
+  }
+  #nav-menu #hamburger {
+    display: flex;
+  }
+  #nav-menu>div:nth-child(2) {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 24px;
+    top: 80px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(0deg, #116466, #525a5a);
+    width: 100%;
+    transition: display 0.5s ease-in-out;
+  }
+  #nav-menu div div {
+    width: 100%;
+    border-bottom: 1px solid #eae7d7;
+    justify-content: center;
+  }
+  #nav-menu div a {
+    margin: 10px 0;
+    text-decoration: none;
+    padding: 4px 0.5px;
+    font-size: 20px;
   }
   section h1 {
     letter-spacing: 8px;
@@ -566,6 +587,38 @@ section h1 {
 @media screen and (min-width: 300px) and (max-width: 500px) {
   #nav-menu {
     height: 30px;
+  }
+  #nav-menu #hamburger {
+    display: flex;
+  }
+  #nav-menu>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 24px;
+    top: 60px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(0deg, #116466, #525a5a);
+    width: 100%;
+  }
+  #nav-menu div div {
+    width: 100%;
+    border-bottom: 1px solid #eae7d7;
+    justify-content: center;
+  }
+  #nav-menu div a {
+    margin: 8px 0;
+    text-decoration: none;
+    padding: 3px 0.5px;
+    font-size: 16px;
+  }
+  #resume-button-1 {
+    padding: 6px 12px;
+    font-size: 14px;
   }
   section h1 {
     letter-spacing: 6px;
@@ -713,6 +766,38 @@ section h1 {
 @media screen and (min-width: 0) and (max-width: 300px) {
   #nav-menu {
     height: 20px;
+  }
+  #nav-menu #hamburger {
+    display: flex;
+  }
+  #nav-menu>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 24px;
+    top: 50px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(0deg, #116466, #525a5a);
+    width: 100%;
+  }
+  #nav-menu div div {
+    width: 100%;
+    border-bottom: 0.25px solid #eae7d7;
+    justify-content: center;
+  }
+  #nav-menu div a {
+    margin: 6px 0;
+    text-decoration: none;
+    padding: 3px 0.5px;
+    font-size: 12px;
+  }
+  #resume-button-1 {
+    padding: 4px 10px;
+    font-size: 10px;
   }
   section h1 {
     letter-spacing: 3px;
@@ -869,6 +954,7 @@ section h1 {
     margin: 0;
   }
 }
+
 @media screen and (min-width: 0) and (max-width: 220px) {
   #skills > div {
     margin: 10px auto;
