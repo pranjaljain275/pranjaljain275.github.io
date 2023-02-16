@@ -592,7 +592,7 @@ section h1 {
     display: flex;
   }
   #nav-menu>div:nth-child(2) {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -771,7 +771,7 @@ section h1 {
     display: flex;
   }
   #nav-menu>div:nth-child(2) {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
