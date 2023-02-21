@@ -25,6 +25,24 @@ section h1 {
   font-size: 30px;
   font-weight: 1000;
 }
+#topbtn{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+#topbtn i {
+  font-size: 40px;
+  color: #eae7d7;
+}
+#topbtn i:hover {
+  color: #45a29e;
+}
 
 /* NAVBAR */
 #nav-menu {

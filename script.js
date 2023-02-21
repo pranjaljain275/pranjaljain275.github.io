@@ -30,6 +30,26 @@ document.querySelector("#hamburger").addEventListener("click", () => {
   }
 });
 
+// SCROLL TOP 
+let topBtn = document.getElementById("topbtn");
+
+window.onscroll = function() {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+topBtn.addEventListener("click", ()=>{
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
 // NAME_ANIMATION
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
