@@ -1,13 +1,13 @@
 // RESUME BUTTON
 document.querySelector("#resume-link-1").addEventListener("click", ()=>{
-  location.assign(
+  window.open(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
     "_blank"
   );
 })
 
 document.querySelector("#resume-link-2").addEventListener("click", ()=>{
-  location.assign(
+  window.open(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
     "_blank"
   );
