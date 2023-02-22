@@ -1,17 +1,17 @@
 // RESUME BUTTON
-document.querySelector("#resume-link-1").addEventListener("click", ()=>{
+document.querySelector("#resume-link-1").addEventListener("click", () => {
   window.open(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
     "_blank"
   );
-})
+});
 
-document.querySelector("#resume-link-2").addEventListener("click", ()=>{
+document.querySelector("#resume-link-2").addEventListener("click", () => {
   window.open(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
     "_blank"
   );
-})
+});
 
 // GITHUB-CALENDAR
 GitHubCalendar(".react-activity-calendar", "pranjaljain275");
@@ -30,22 +30,25 @@ document.querySelector("#hamburger").addEventListener("click", () => {
   }
 });
 
-// SCROLL TOP 
+// SCROLL TOP
 let topBtn = document.getElementById("topbtn");
 
-window.onscroll = function() {
-  scrollFunction()
+window.onscroll = function () {
+  scrollFunction();
 };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (
+//     document.body.scrollTop > 300 ||
+//     document.documentElement.scrollTop > 300
+//   ) {
+//     topBtn.style.display = "block";
+//   } else {
+//     topBtn.style.display = "none";
+//   }
+// }
 
-topBtn.addEventListener("click", ()=>{
+topBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
