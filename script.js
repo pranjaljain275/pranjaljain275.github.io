@@ -31,11 +31,11 @@ document.querySelector("#hamburger").addEventListener("click", () => {
 });
 
 // SCROLL TOP
-let topBtn = document.getElementById("topbtn");
+// let topBtn = document.getElementById("topbtn");
 
-window.onscroll = function () {
-  scrollFunction();
-};
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
 // function scrollFunction() {
 //   if (
