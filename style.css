@@ -43,7 +43,12 @@ section h1 {
 #topbtn i:hover {
   color: #45a29e;
 } */
-
+button a {
+  color: #1d1d1d;
+}
+button:hover a {
+  color: #eae7d7;
+}
 /* NAVBAR */
 #nav-menu {
   display: flex;
