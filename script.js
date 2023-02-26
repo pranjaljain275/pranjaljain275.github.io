@@ -48,10 +48,10 @@ document.querySelector("#hamburger").addEventListener("click", () => {
 //   }
 // }
 
-topBtn.addEventListener("click", () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+// topBtn.addEventListener("click", () => {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// });
 
 // NAME_ANIMATION
 var TxtType = function (el, toRotate, period) {
