@@ -1,4 +1,3 @@
-# pranjaljain275.github.io
 # My Portfolio Repository
 
 ![logo](https://jusmarktech.com/public/a/images/pages/web_development.gif)
