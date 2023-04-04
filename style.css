@@ -192,7 +192,8 @@ button:hover a {
   align-items: center;
 }
 .home-img {
-  width: 18%;
+  width: 20%;
+  /* height: 200%; */
   overflow: hidden;
   border-radius: 10px;
   margin-right: 50px;
