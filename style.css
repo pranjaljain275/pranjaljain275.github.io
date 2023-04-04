@@ -294,7 +294,7 @@ button:hover a {
   justify-content: center;
   background: linear-gradient(45deg, #116466, #485454);
   margin: 50px auto;
-  height: 300px;
+  height: 320px;
   padding: 20px 0;
   border-radius: 10px;
   transition: all 0.75s ease-in-out;
@@ -320,14 +320,15 @@ button:hover a {
 }
 .project-title {
   margin-bottom: 16px;
-  font-size: 26px;
+  font-size: 25px;
   letter-spacing: 2px;
+  text-decoration: underline;
 }
 .project-description {
-  line-height: 24px;
+  line-height: 20px;
 }
 .project-card p {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 .project-card > div > div {
@@ -564,8 +565,8 @@ button:hover a {
     margin-right: 20px;
   }
   .project-title {
-    margin-bottom: 12px;
-    font-size: 22px;
+    margin-bottom: 9px;
+    font-size: 18px;
     letter-spacing: 1.25px;
   }
   .project-description {
@@ -573,7 +574,7 @@ button:hover a {
   }
   .project-card p {
     margin-bottom: 12px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .project-card > div > div > a {
     font-size: 10px;
@@ -933,7 +934,7 @@ button:hover a {
   }
   .project-title {
     margin-bottom: 6px;
-    font-size: 14px;
+    font-size: 11px;
     letter-spacing: 0.5px;
   }
   .project-description {
@@ -941,7 +942,7 @@ button:hover a {
   }
   .project-card p {
     margin-bottom: 8px;
-    font-size: 8px;
+    font-size: 7px;
   }
   .project-card > div > div > a {
     font-size: 6px;
