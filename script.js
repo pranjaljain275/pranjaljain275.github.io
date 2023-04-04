@@ -1,3 +1,8 @@
+// Logo home
+document.querySelector("#logo").addEventListener("click", () => {
+  window.location.href = "index.html";
+});
+
 // RESUME BUTTON
 document.querySelector("#resume-link-1").addEventListener("click", () => {
   window.open(
