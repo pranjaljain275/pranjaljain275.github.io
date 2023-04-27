@@ -249,9 +249,9 @@ button:hover a {
   margin: 30px auto;
   display: grid;
   justify-content: space-around;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(4, 170px);
   /* grid-template-rows: repeat(3, 200px); */
-  gap: 70px;
+  gap: 40px;
 }
 #skills > div .skills-card {
   display: flex;
@@ -269,7 +269,7 @@ button:hover a {
     #116466 0px 18px 36px -18px inset;
 }
 #skills .skills-card-img {
-  width: 75%;
+  width: 65%;
   transform: scale(1);
   transition: transform 0.75s ease-in-out;
 }
@@ -538,7 +538,7 @@ button:hover a {
     padding: 12px;
   }
   #skills .skills-card-img {
-    width: 60%;
+    width: 55%;
   }
   #skills .skills-card-name {
     font-size: 16px;
