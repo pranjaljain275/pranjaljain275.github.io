@@ -37,14 +37,6 @@ document.querySelector("#hamburger").addEventListener("click", () => {
   }
 });
 
-document
-  .querySelector("#nav-menu>div:nth-child(2)")
-  .addEventListener("click", () => {
-    if(screen.width <= 830) {
-      document.querySelector("#nav-menu>div:nth-child(2)").style.display = "none";
-    }
-  });
-
 // SCROLL TOP
 // let topBtn = document.getElementById("topbtn");
 
