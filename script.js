@@ -37,11 +37,11 @@ document.querySelector("#hamburger").addEventListener("click", () => {
   }
 });
 
-document
-  .querySelector("#nav-menu>div:nth-child(2)")
-  .addEventListener("click", () => {
-    document.querySelector("#nav-menu>div:nth-child(2)").style.display = "none";
-  });
+// document
+//   .querySelector("#nav-menu>div:nth-child(2)")
+//   .addEventListener("click", () => {
+//     document.querySelector("#nav-menu>div:nth-child(2)").style.display = "none";
+//   });
 
 // SCROLL TOP
 // let topBtn = document.getElementById("topbtn");
