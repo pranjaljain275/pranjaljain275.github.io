@@ -6,7 +6,7 @@ document.querySelector("#logo").addEventListener("click", () => {
 // RESUME BUTTON
 document.querySelector("#resume-link-1").addEventListener("click", () => {
   window.open(
-  // location.assign(
+    // location.assign(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
     "_blank"
   );
@@ -14,7 +14,7 @@ document.querySelector("#resume-link-1").addEventListener("click", () => {
 
 document.querySelector("#resume-link-2").addEventListener("click", () => {
   window.open(
-  // location.assign(
+    // location.assign(
     "https://drive.google.com/file/d/1OrNImyNk2xNE_vsnyQ4a8-c2Mq-uT0Xi/view",
     "_blank"
   );
@@ -36,6 +36,12 @@ document.querySelector("#hamburger").addEventListener("click", () => {
     x.style.display = "flex";
   }
 });
+
+document
+  .querySelector("#nav-menu>div:nth-child(2)")
+  .addEventListener("click", () => {
+    document.querySelector("#nav-menu>div:nth-child(2)").style.display = "none";
+  });
 
 // SCROLL TOP
 // let topBtn = document.getElementById("topbtn");
