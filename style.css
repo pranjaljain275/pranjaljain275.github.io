@@ -161,7 +161,8 @@ button:hover a {
   color: #45a29e;
 }
 #home {
-  margin: 120px auto;
+  /* margin: 120px auto; */
+  padding-top: 30px;
   text-align: center;
 }
 #home h2 {
